@@ -5,10 +5,10 @@ Látképben szeretnék arra törekedni, hogy a lehető legjobban hasonlítson a 
 A program a tervek szerint az alap elvárásokon kívül fog tartalmazni néhány plusz dolgot, ilyen például a boundingbox megvalósítás.
 
 Az eddigi állapot:
-  A szoba elkészült, és a berendezése is megtörtént.
-  Minden objektum rendelkezik saját textúrával.
-  A falakon illetve a mennyezeten és a talajon nem tud átmenni a felhasználó.
-  Megvalósul a kamerakezelés.
+   - A szoba elkészült, és a berendezése is megtörtént.
+   - Minden objektum rendelkezik saját textúrával.
+   - A falakon illetve a mennyezeten és a talajon nem tud átmenni a felhasználó.
+   - Megvalósul a kamerakezelés.
       Mozgatható minden irányban.
-  A + és - gombok segítségével a fényt tudjuk kezelni.
+   - A + és - gombok segítségével a fényt tudjuk kezelni.
   
