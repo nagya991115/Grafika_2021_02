@@ -23,7 +23,7 @@ Segítség a program használatához:
    - W,A,S,D - kamera mozgatása
    - E,Q - kamera mozgatása fel és le
    - I,J,K,L - Csigusz mozgatása
-   - + és - gombokkal módosítható a fényerő
+   - A + és - gombokkal módosítható a fényerő
    - H - Help előhívása
 
   
