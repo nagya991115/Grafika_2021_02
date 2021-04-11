@@ -19,3 +19,5 @@ Későbbi tervek:
    - Bounding box megvalósítása olyan módon, hogy se a karakter illetve a kamera se tudjon rajtuk áthaladni.
    - További objektumok betöltése, a mégnagyobb életszerűség növeléséhez.
   
+A textúrák és a modellek az alábbi linken találhatók:
+https://drive.google.com/drive/folders/1OhnKgUXU2w9JoK9o0cSWiVyPzb2bySBS?usp=sharing
