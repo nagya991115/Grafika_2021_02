@@ -18,6 +18,14 @@ Az eddigi állapot:
 Későbbi tervek:
    - Bounding box megvalósítása olyan módon, hogy se a karakter illetve a kamera se tudjon rajtuk áthaladni.
    - További objektumok betöltése, a mégnagyobb életszerűség növeléséhez.
+
+Segítség a program használatához:
+   - W,A,S,D - kamera mozgatása
+   - E,Q - kamera mozgatása fel és le
+   - I,J,K,L - Csigusz mozgatása
+   - + és - gombokkal módosítható a fényerő
+   - H - Help előhívása
+
   
 A textúrák és a modellek az alábbi linken találhatók:
 https://drive.google.com/drive/folders/1OhnKgUXU2w9JoK9o0cSWiVyPzb2bySBS?usp=sharing
