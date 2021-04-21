@@ -7,6 +7,9 @@
 
 void init_models(Scene* scene)
 {
+	load_model(&(scene->plane.model), "models/plane.obj");
+	scene->plane.speed.x = 3;
+	scene->plane.speed.y = 1;
 	load_model(&(scene->bosschair.model), "models/bosschair.obj");	
 	load_model(&(scene->desk.model), "models/desk.obj");
 	load_model(&(scene->chair.model), "models/chair.obj");
@@ -19,6 +22,9 @@ void init_models(Scene* scene)
 	load_model(&(scene->fan.model), "models/fan.obj");
 	load_model(&(scene->fan_holder.model), "models/fan_holder.obj");
 	load_model(&(scene->person.model), "models/person.obj");
+	scene->person.scale.x = 0.2;
+	scene->person.scale.y = 0.2;
+	scene->person.scale.z = 0.2;
 
 }
 
@@ -27,6 +33,10 @@ void set_position(Scene* scene)
 	scene->bosschair.position.x = -8;
 	scene->bosschair.position.y = 8;
 	scene->bosschair.position.z = -5;
+
+	scene->plane.position.x = 0;
+	scene->plane.position.y = 0;
+	scene->plane.position.z = 2;
 
 	scene->desk.position.x = -5;
 	scene->desk.position.y = 5;
@@ -227,8 +237,16 @@ void draw_scene(Scene* scene)
 	glRotatef(90, 1, 0, 0);
 	glRotatef(90, 0, 1, 0);
 	glRotatef(scene->person.rotation.z, 0, 1, 0);
-	glScalef(0.2f, 0.2f, 0.2f);
+	glScalef(scene->person.scale.x, scene->person.scale.y, scene->person.scale.z);
     draw_model(&(scene->person.model));
+    glPopMatrix();
+
+	glBindTexture(GL_TEXTURE_2D,  scene->texture_id[7]);
+	glPushMatrix();
+    glTranslatef(scene->plane.position.x,scene->plane.position.y,scene->plane.position.z);
+	glRotatef(90, 0, 0, 1);
+	glScalef(0.4f,0.4f, 0.4f);
+    draw_model(&(scene->plane.model));
     glPopMatrix();
 	
 	glDisable(GL_TEXTURE_2D);

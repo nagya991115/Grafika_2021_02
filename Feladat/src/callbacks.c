@@ -116,9 +116,12 @@ void keyboard(unsigned char key, int x, int y)
         if (is_help_visible) {
         is_help_visible = 0;
     }
-    else is_help_visible = 1;
+    break;
+    case 'u' : set_csigusz_scale(&(scene.person),0.01);
+    break;
+    case 'o' : set_csigusz_scale(&(scene.person),-0.01);
+    break;
     }
-
     glutPostRedisplay();
 }
 
@@ -161,6 +164,7 @@ void idle()
     update_camera(&camera, elapsed_time);
     move_csigusz(&(scene.person),elapsed_time);
     rotate_csigusz(&(scene.fan),3);
+    move_plane(&(scene.plane),elapsed_time);
 
     glutPostRedisplay();
 }

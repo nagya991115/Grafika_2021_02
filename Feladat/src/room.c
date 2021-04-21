@@ -15,11 +15,8 @@ void init_room()
 
 void room_draw(struct Scene* scene, double size)
 {
-    /*turn off lighting, when making the roombox
-    turn off depth texting
-    and turn on texturing*/
+
     glDisable(GL_LIGHTING);
-    glDisable(GL_DEPTH_TEST);
     glEnable(GL_TEXTURE_2D);
     glEnable(GL_COLOR_MATERIAL);
     glColor3f(scene->light, scene->light, scene->light);
@@ -100,7 +97,6 @@ void room_draw(struct Scene* scene, double size)
 
     /*turn back what has been disabled*/
     glEnable(GL_LIGHTING);
-    glEnable(GL_DEPTH_TEST);
     glDisable(GL_TEXTURE_2D);
     glDisable(GL_COLOR_MATERIAL);
 }
