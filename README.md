@@ -25,6 +25,7 @@ Segítség a program használatához:
    - I,J,K,L - Csigusz mozgatása
    - A + és - gombokkal módosítható a fényerő
    - H - Help előhívása
+   - O é U gombokkal a csiga mretének állítása
 
   
 A textúrák és a modellek az alábbi linken találhatók:
