@@ -12,6 +12,7 @@ typedef struct Object
 {
 	Model model;
 	vec3 position;
+	vec3 scale;
 	vec3 speed;
 	vec3 rotation;
 	vec3 prev_position;
@@ -31,6 +32,7 @@ typedef struct Scene
 	Object fan;
 	Object fan_holder;
 	Object person;
+	Object plane;
     GLuint texture_id[12];
 	float light;
 } Scene;

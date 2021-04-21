@@ -3,7 +3,8 @@
 
 #include "camera.h"
 #include "scene.h"
-
+#include "csigusz.h"
+#include "plane.h"
 #include <GL/glut.h>
 
 /**

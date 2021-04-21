@@ -54,11 +54,5 @@ void set_camera_vertical_speed(Camera* camera, double speed);
 
 void show_help(struct Scene* scene);
 
-void set_csigusz_speed(struct Object* object, double speed);
 
-void rotate_csigusz(struct Object* object, double horizontal);
-
-void move_csigusz(struct Object* object, double time);
-
-void set_csigusz_side_speed(struct Object* object, double speed);
 #endif /* CAMERA_H */
