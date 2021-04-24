@@ -8,6 +8,17 @@
 #include "room.h"
 
 
+typedef struct Furniture
+{
+	Model model;
+	vec3 position;
+	vec3 scale;
+	GLuint texture;
+	GLuint rotation_1[4];
+	GLuint rotation_2[4];
+} Furniture;
+
+
 typedef struct Object
 {
 	Model model;
@@ -20,17 +31,8 @@ typedef struct Object
 
 typedef struct Scene
 {
-	Object bosschair;
-	Object desk;
-	Object chair;
-	Object sofa;
-	Object szekreny;
-	Object szekreny_2;
-	Object door;
-	Object flowerpot;
-	Object plant;
+	Furniture furnitures[10];
 	Object fan;
-	Object fan_holder;
 	Object person;
 	Object plane;
     GLuint texture_id[12];
@@ -60,6 +62,8 @@ void set_lighting(Scene* scene);
 void draw_scene(Scene* scene);
 
 void set_position(Scene* scene);
+void set_scale(Scene* scene);
 void init_models(Scene* scene);
 void init_textures(Scene* scene);
+void set_rotation(Scene* scene);
 #endif /* SCENE_H */
