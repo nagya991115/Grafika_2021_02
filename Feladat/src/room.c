@@ -16,6 +16,7 @@ void init_room()
 void room_draw(struct Scene* scene, double size)
 {
 
+   // glDisable(GL_DEPTH_TEST);
     glDisable(GL_LIGHTING);
     glEnable(GL_TEXTURE_2D);
     glEnable(GL_COLOR_MATERIAL);
@@ -99,4 +100,6 @@ void room_draw(struct Scene* scene, double size)
     glEnable(GL_LIGHTING);
     glDisable(GL_TEXTURE_2D);
     glDisable(GL_COLOR_MATERIAL);
+   // glEnable(GL_DEPTH_TEST);
+
 }
